@@ -33,6 +33,7 @@ const stackChips = [
   "React",
   "Next.js",
   "Node.js",
+  "Express.js",
   "MongoDB",
   "TypeScript",
   "Tailwind",

@@ -8,7 +8,7 @@ const techChips = [
   "React",
   "Next.js",
   "TypeScript",
-  "Node.js",
+  "Express.js",
   "MongoDB",
   "Tailwind",
   "Redux",

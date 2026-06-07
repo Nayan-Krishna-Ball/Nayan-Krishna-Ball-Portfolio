@@ -2,7 +2,7 @@
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { HiOutlineDocumentText } from "react-icons/hi";
 import { MdFileDownload } from "react-icons/md";
-import PDF from "../assets/Junior_Software_Engineer_Fardus_Hassan .pdf";
+import PDF from "../assets/Forntend_Developer_Nayan_krishna_bal.pdf";
 import EditorialSection from "./EditorialSection";
 import {
   editorialCourses,
@@ -23,8 +23,7 @@ function MetaRow({ label, children }) {
 
 function ExperienceCard({ job, index }) {
   const accent = index % 2 === 0 ? "emerald" : "violet";
-  const dotClass =
-    accent === "emerald" ? "bg-emerald-500" : "bg-violet-500";
+  const dotClass = accent === "emerald" ? "bg-emerald-500" : "bg-violet-500";
   const kickerClass =
     accent === "emerald" ? "text-emerald-800" : "text-violet-800";
 
@@ -43,7 +42,9 @@ function ExperienceCard({ job, index }) {
         <div className="flex flex-col gap-4 border-b border-black/[0.06] pb-6 sm:flex-row sm:items-start sm:justify-between sm:gap-6">
           <div className="min-w-0 space-y-2">
             <div className="flex items-center gap-2">
-              <span className={`h-1.5 w-1.5 shrink-0 rounded-full ${dotClass}`} />
+              <span
+                className={`h-1.5 w-1.5 shrink-0 rounded-full ${dotClass}`}
+              />
               <span
                 className={`text-[10px] font-bold uppercase tracking-[0.22em] ${kickerClass}`}
               >
@@ -180,15 +181,15 @@ const EditorialResume = () => {
                 </p>
                 <p className="mt-4 text-center font-jost text-xl font-semibold leading-snug tracking-tight text-gray-950 sm:text-2xl lg:text-left">
                   A concise{" "}
-                  <span className="text-emerald-800">timeline of roles</span>{" "}
-                  — same story as the PDF, formatted for the web.
+                  <span className="text-emerald-800">timeline of roles</span> —
+                  same story as the PDF, formatted for the web.
                 </p>
                 <div className="pointer-events-none absolute right-5 top-5 rounded-full bg-white/90 px-2.5 py-1 text-[9px] font-bold uppercase tracking-[0.18em] text-gray-700 shadow-sm backdrop-blur-sm">
                   PDF ready
                 </div>
                 <a
                   href={PDF}
-                  download="Fardus_Hassan_Resume"
+                  download="Nayan_Krishna_Ball_Resume"
                   className="relative mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full border border-black/[0.1] bg-gray-950 py-3.5 text-sm font-semibold text-white shadow-lg shadow-black/10 transition-all hover:bg-gray-900 sm:w-auto sm:px-8"
                 >
                   <MdFileDownload className="text-lg" aria-hidden />

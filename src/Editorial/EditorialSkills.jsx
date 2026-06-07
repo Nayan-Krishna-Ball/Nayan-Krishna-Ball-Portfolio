@@ -1,35 +1,35 @@
 /* eslint-disable react/prop-types -- SkillTile receives stable skill objects */
-import { useEffect, useState } from "react";
 import AOS from "aos";
+import { useEffect, useState } from "react";
 import {
-  FaHtml5,
-  FaCss3Alt,
-  FaJsSquare,
-  FaReact,
   FaBootstrap,
-  FaNodeJs,
+  FaCss3Alt,
+  FaFigma,
   FaGitAlt,
   FaGithub,
-  FaFigma,
+  FaHtml5,
+  FaJsSquare,
+  FaNodeJs,
+  FaReact,
   FaTrello,
 } from "react-icons/fa";
+import { RiAiGenerate } from "react-icons/ri";
 import {
-  SiTailwindcss,
+  SiAnthropic,
+  SiCanva,
+  SiExpress,
   SiFirebase,
   SiMongodb,
-  SiExpress,
-  SiNextdotjs,
-  SiRedux,
-  SiTypescript,
-  SiVisualstudiocode,
   SiNetlify,
-  SiVercel,
-  SiCanva,
+  SiNextdotjs,
   SiOpenai,
-  SiAnthropic,
+  SiRedux,
+  SiTailwindcss,
+  SiTypescript,
+  SiVercel,
+  SiVisualstudiocode,
 } from "react-icons/si";
 import { TbBrandReactNative, TbRobot } from "react-icons/tb";
-import { RiAiGenerate } from "react-icons/ri";
 import EditorialSection from "./EditorialSection";
 
 const skillCategories = [
@@ -39,7 +39,10 @@ const skillCategories = [
     skills: [
       { icon: <FaHtml5 className="text-gray-800" />, name: "HTML5" },
       { icon: <FaCss3Alt className="text-gray-800" />, name: "CSS3" },
-      { icon: <SiTailwindcss className="text-gray-800" />, name: "Tailwind CSS" },
+      {
+        icon: <SiTailwindcss className="text-gray-800" />,
+        name: "Tailwind CSS",
+      },
       { icon: <FaBootstrap className="text-gray-800" />, name: "Bootstrap 5" },
       { icon: <FaJsSquare className="text-gray-800" />, name: "JavaScript" },
       { icon: <SiTypescript className="text-gray-800" />, name: "TypeScript" },
@@ -51,7 +54,10 @@ const skillCategories = [
     skills: [
       { icon: <FaReact className="text-gray-800" />, name: "React.js" },
       { icon: <SiNextdotjs className="text-gray-800" />, name: "Next.js" },
-      { icon: <TbBrandReactNative className="text-gray-800" />, name: "React Native" },
+      {
+        icon: <TbBrandReactNative className="text-gray-800" />,
+        name: "React Native",
+      },
       { icon: <SiRedux className="text-gray-800" />, name: "Redux" },
     ],
   },
@@ -69,7 +75,10 @@ const skillCategories = [
     title: "Tools & Platforms",
     blurb: "Workflow, design handoff, deploy, and AI assist.",
     skills: [
-      { icon: <SiVisualstudiocode className="text-gray-800" />, name: "VS Code" },
+      {
+        icon: <SiVisualstudiocode className="text-gray-800" />,
+        name: "VS Code",
+      },
       { icon: <FaGitAlt className="text-gray-800" />, name: "Git" },
       { icon: <FaGithub className="text-gray-800" />, name: "GitHub" },
       { icon: <FaFigma className="text-gray-800" />, name: "Figma" },
@@ -260,26 +269,26 @@ const EditorialSkills = () => {
 
         <div className="min-w-0 lg:col-span-8">
           <div key={activeTab} role="tabpanel">
-              <div className="mb-6 flex flex-col items-center gap-2 border-b border-black/[0.06] pb-6 sm:flex-row sm:justify-between sm:gap-4">
-                <div className="flex items-center gap-2">
-                  <span className="h-1.5 w-1.5 rounded-full bg-gray-950" />
-                  <h3 className="text-xl font-bold text-gray-950 sm:text-2xl">
-                    {skillCategories[activeTab].title}
-                  </h3>
-                </div>
-                <p className="max-w-md text-center text-sm leading-relaxed text-[var(--ed-muted)] sm:text-left">
-                  {skillCategories[activeTab].blurb}
-                </p>
+            <div className="mb-6 flex flex-col items-center gap-2 border-b border-black/[0.06] pb-6 sm:flex-row sm:justify-between sm:gap-4">
+              <div className="flex items-center gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-gray-950" />
+                <h3 className="text-xl font-bold text-gray-950 sm:text-2xl">
+                  {skillCategories[activeTab].title}
+                </h3>
               </div>
-              <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:gap-5">
-                {skillCategories[activeTab].skills.map((skill, idx) => (
-                  <SkillTile
-                    key={`${activeTab}-${skill.name}`}
-                    skill={skill}
-                    index={idx}
-                  />
-                ))}
-              </div>
+              <p className="max-w-md text-center text-sm leading-relaxed text-[var(--ed-muted)] sm:text-left">
+                {skillCategories[activeTab].blurb}
+              </p>
+            </div>
+            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:gap-5">
+              {skillCategories[activeTab].skills.map((skill, idx) => (
+                <SkillTile
+                  key={`${activeTab}-${skill.name}`}
+                  skill={skill}
+                  index={idx}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
