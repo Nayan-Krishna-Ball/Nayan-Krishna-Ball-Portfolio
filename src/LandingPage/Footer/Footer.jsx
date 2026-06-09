@@ -1,8 +1,8 @@
-import { SectionReveal } from "../../Components/SectionReveal";
-import { FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa";
-import { IoLogoWhatsapp } from "react-icons/io";
-import { HiOutlineMail } from "react-icons/hi";
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { HiOutlineMail } from "react-icons/hi";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { SectionReveal } from "../../Components/SectionReveal";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -15,22 +15,23 @@ const navLinks = [
 
 const socials = [
   {
-    href: "https://github.com/Fardus-Hassan",
+    href: "https://github.com/Nayan-Krishna-Ball",
     label: "GitHub",
     icon: FaGithub,
   },
   {
-    href: "https://www.facebook.com/profile.php?id=100034957954013",
+    href: "https://www.facebook.com/sawpner.purni/",
     label: "Facebook",
     icon: FaFacebook,
   },
   {
-    href: "https://www.linkedin.com/in/fardus-hassan",
+    href: "https://www.linkedin.com/in/nayan-krishna-dd/",
+
     label: "LinkedIn",
     icon: FaLinkedin,
   },
   {
-    href: "https://api.whatsapp.com/send/?phone=8801722092675&text&type=phone_number&app_absent=0",
+    href: "https://api.whatsapp.com/send/?phone=8801619960324&text&type=phone_number&app_absent=0",
     label: "WhatsApp",
     icon: IoLogoWhatsapp,
     iconClass: "text-[22px]",
@@ -39,11 +40,11 @@ const socials = [
 
 const Footer = () => {
   return (
-    <SectionReveal as="footer" className="font-jost relative mt-4 overflow-hidden">
-      <div
-        className="pointer-events-none absolute inset-0"
-        aria-hidden
-      />
+    <SectionReveal
+      as="footer"
+      className="font-jost relative mt-4 overflow-hidden"
+    >
+      <div className="pointer-events-none absolute inset-0" aria-hidden />
       <div className="relative xl:container w-[90%] mx-auto pt-14 pb-8 lg:pt-16 lg:pb-10">
         <div className="liquid-glass rounded-3xl p-8 lg:p-10 lg:pb-12 grid gap-12 lg:gap-10 lg:grid-cols-12 lg:items-start">
           {/* Brand */}
@@ -53,12 +54,13 @@ const Footer = () => {
               className="inline-block gradient-color md:text-4xl text-3xl jost-bold"
             >
               &lt;
-              <span className="md:text-3xl text-2xl font-black">Fardus</span>
+              <span className="md:text-3xl text-2xl font-black">Nayan</span>
               <span className="font-bold">/</span>&gt;
             </a>
             <p className="mt-4 max-w-md mx-auto lg:mx-0 text-gray-600 text-[15px] leading-relaxed">
               Front-end &amp; MERN stack developer building responsive web apps,
-              ERP products, and polished UI with React, Redux, and modern tooling.
+              ERP products, and polished UI with React, Redux, and modern
+              tooling.
             </p>
             <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-3">
               {socials.map(({ href, label, icon: Icon, iconClass }) => (
@@ -109,22 +111,22 @@ const Footer = () => {
               Open to freelance, collaborations, and full-time roles. Drop a
               message—I usually reply within a day.
             </p>
-          <div className="flex flex-col gap-2">
-          <a
-              href="mailto:fardus.dev@gmail.com"
-              className="inline-flex items-center text-xs justify-center gap-2 rounded-xl bg-secColor p-3 font-semibold text-white shadow-lg shadow-secColor/25 transition-all duration-300 hover:bg-gradient-to-r hover:from-secColor hover:to-pmColor hover:shadow-pmColor/20 hover:-translate-y-0.5 w-full sm:w-auto"
-            >
-              <HiOutlineMail className="text-lg" />
-              fardus.dev@gmail.com
-            </a>
-            <a
-              href="#contact"
-              className="mt-3 inline-flex items-center justify-center gap-1.5 text-sm font-semibold text-secColor hover:text-pmColor transition-colors w-full sm:w-auto"
-            >
-              Contact form
-              <FaArrowUpRightFromSquare className="text-xs opacity-70" />
-            </a>
-          </div>
+            <div className="flex flex-col gap-2">
+              <a
+                href="mailto:fardus.dev@gmail.com"
+                className="inline-flex items-center text-xs justify-center gap-2 rounded-xl bg-secColor p-3 font-semibold text-white shadow-lg shadow-secColor/25 transition-all duration-300 hover:bg-gradient-to-r hover:from-secColor hover:to-pmColor hover:shadow-pmColor/20 hover:-translate-y-0.5 w-full sm:w-auto"
+              >
+                <HiOutlineMail className="text-lg" />
+                nayan.krishna710@gmail.com
+              </a>
+              <a
+                href="#contact"
+                className="mt-3 inline-flex items-center justify-center gap-1.5 text-sm font-semibold text-secColor hover:text-pmColor transition-colors w-full sm:w-auto"
+              >
+                Contact form
+                <FaArrowUpRightFromSquare className="text-xs opacity-70" />
+              </a>
+            </div>
           </div>
         </div>
 
@@ -132,7 +134,7 @@ const Footer = () => {
 
         <div className="mt-8 flex flex-col-reverse sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
           <p className="text-sm text-gray-500">
-            © {new Date().getFullYear()} Fardus Hassan. All rights reserved.
+            © {new Date().getFullYear()} Nayan Krishna. All rights reserved.
           </p>
           <p className="text-xs text-gray-400 tracking-wide">
             Crafted with React · Tailwind CSS · Vite

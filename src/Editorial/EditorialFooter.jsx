@@ -1,8 +1,8 @@
-import { SectionReveal } from "../Components/SectionReveal";
-import { FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa";
-import { IoLogoWhatsapp } from "react-icons/io";
-import { HiOutlineMail } from "react-icons/hi";
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { HiOutlineMail } from "react-icons/hi";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { SectionReveal } from "../Components/SectionReveal";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -14,19 +14,24 @@ const navLinks = [
 ];
 
 const socials = [
-  { href: "https://github.com/Fardus-Hassan", label: "GitHub", icon: FaGithub },
   {
-    href: "https://www.facebook.com/profile.php?id=100034957954013",
+    href: "https://github.com/Nayan-Krishna-Ball",
+    label: "GitHub",
+    icon: FaGithub,
+  },
+  {
+    href: "https://www.facebook.com/sawpner.purni/",
     label: "Facebook",
     icon: FaFacebook,
   },
   {
-    href: "https://www.linkedin.com/in/fardus-hassan",
+    href: "https://www.linkedin.com/in/nayan-krishna-dd/",
     label: "LinkedIn",
     icon: FaLinkedin,
   },
   {
-    href: "https://api.whatsapp.com/send/?phone=8801722092675&text&type=phone_number&app_absent=0",
+    href: "https://api.whatsapp.com/send/?phone=8801619960324&text&type=phone_number&app_absent=0",
+
     label: "WhatsApp",
     icon: IoLogoWhatsapp,
     iconClass: "text-[22px]",
@@ -72,11 +77,14 @@ const EditorialFooter = () => {
               href="#home"
               className="inline-flex items-center gap-2 text-2xl font-bold tracking-tight text-gray-950 md:text-3xl"
             >
-              <span className="h-2 w-2 rounded-full bg-emerald-500" aria-hidden />
-              &lt;Fardus/&gt;
+              <span
+                className="h-2 w-2 rounded-full bg-emerald-500"
+                aria-hidden
+              />
+              &lt;Nayan/&gt;
             </a>
             <p className="mx-auto mt-4 max-w-sm text-sm leading-relaxed text-[var(--ed-muted)] lg:mx-0">
-              Front-end &amp; MERN developer — web apps, ERP, and polished UI with
+              Front-end &amp; MERN developer — web apps and polished UI with
               React and modern tooling.
             </p>
             <p className="mt-5 text-[10px] font-bold uppercase tracking-[0.22em] text-[var(--ed-muted)]">
@@ -147,22 +155,25 @@ const EditorialFooter = () => {
               className="flex lg:flex-wrap lg:justify-start justify-center items-center gap-2"
               data-aos="fade"
             >
-            <a
-              href="mailto:fardus.dev@gmail.com"
-              className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-gray-950 py-3 text-xs font-semibold text-white shadow-lg shadow-black/10 transition-all hover:bg-gray-900 lg:w-auto sm:px-5"
-              data-aos="fade"
-            >
-              <HiOutlineMail className="text-base" aria-hidden />
-              Email me
-            </a>
-            <a
-              href="#contact"
-              className="mt-5 inline-flex w-full lg:w-auto items-center justify-center gap-1.5 text-sm font-semibold text-gray-800 transition-colors hover:text-gray-950 lg:justify-start"
-              data-aos="fade"
-            >
-              Contact form
-              <FaArrowUpRightFromSquare className="text-xs opacity-70" aria-hidden />
-            </a>
+              <a
+                href="mailto:fardus.dev@gmail.com"
+                className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-gray-950 py-3 text-xs font-semibold text-white shadow-lg shadow-black/10 transition-all hover:bg-gray-900 lg:w-auto sm:px-5"
+                data-aos="fade"
+              >
+                <HiOutlineMail className="text-base" aria-hidden />
+                Email me
+              </a>
+              <a
+                href="#contact"
+                className="mt-5 inline-flex w-full lg:w-auto items-center justify-center gap-1.5 text-sm font-semibold text-gray-800 transition-colors hover:text-gray-950 lg:justify-start"
+                data-aos="fade"
+              >
+                Contact form
+                <FaArrowUpRightFromSquare
+                  className="text-xs opacity-70"
+                  aria-hidden
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -173,7 +184,7 @@ const EditorialFooter = () => {
         // data-aos="fade"
       >
         <p className="text-xs text-[var(--ed-muted)]">
-          © {new Date().getFullYear()} Fardus Hassan. All rights reserved.
+          © {new Date().getFullYear()} Nayan Krishna. All rights reserved.
         </p>
         <div
           className="flex flex-wrap items-center justify-center gap-2 sm:justify-end"

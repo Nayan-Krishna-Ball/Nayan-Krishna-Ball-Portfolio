@@ -8,7 +8,7 @@ import myimg from "../../assets/me.png";
 
 const socials = [
   {
-    href: "https://github.com/Nayan-Krishna-Ball",
+    href: "https://github.com/Nayan-Krishna-Ball", 
     label: "GitHub",
     Icon: LuGithub,
   },
