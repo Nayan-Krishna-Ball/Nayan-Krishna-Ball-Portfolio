@@ -2,7 +2,6 @@
 import AOS from "aos";
 import { useEffect, useState } from "react";
 import {
-  FaBootstrap,
   FaCss3Alt,
   FaFigma,
   FaGitAlt,
@@ -43,7 +42,7 @@ const skillCategories = [
         icon: <SiTailwindcss className="text-gray-800" />,
         name: "Tailwind CSS",
       },
-      { icon: <FaBootstrap className="text-gray-800" />, name: "Bootstrap 5" },
+      // { icon: <FaBootstrap className="text-gray-800" />, name: "Bootstrap 5" },
       { icon: <FaJsSquare className="text-gray-800" />, name: "JavaScript" },
       { icon: <SiTypescript className="text-gray-800" />, name: "TypeScript" },
     ],
