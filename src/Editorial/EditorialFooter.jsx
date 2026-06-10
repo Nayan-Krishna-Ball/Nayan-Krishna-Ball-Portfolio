@@ -70,7 +70,7 @@ const EditorialFooter = () => {
             {/* <div className="mb-3 flex items-center justify-center gap-2 lg:justify-start">
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
               <span className="text-[10px] font-bold uppercase tracking-[0.22em] text-emerald-800">
-                Fardus Hassan
+              Nayan krishna Bal
               </span>
             </div> */}
             <a

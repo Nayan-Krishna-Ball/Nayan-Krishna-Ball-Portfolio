@@ -1,18 +1,22 @@
+//
+import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 import {
+  HiOutlineLocationMarker,
   HiOutlineMail,
   HiOutlinePhone,
-  HiOutlineLocationMarker,
 } from "react-icons/hi";
 import EditorialSection from "./EditorialSection";
 
 const quickLinks = [
-  { label: "Email", href: "mailto:fardus.dev@gmail.com" },
-  { label: "WhatsApp", href: "https://api.whatsapp.com/send/?phone=8801722092675&text&type=phone_number&app_absent=0" },
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/fardus-hassan" },
+  { label: "Email", href: "mailto:nayan.krishna710@gmail.com" },
+  {
+    label: "WhatsApp",
+    href: "https://api.whatsapp.com/send/?phone=8801619960324&text&type=phone_number&app_absent=0",
+  },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/nayan-krishna-dd/" },
 ];
 
 const EditorialContact = () => {
@@ -28,6 +32,8 @@ const EditorialContact = () => {
   const onSubmit = async (data) => {
     setError("");
     setSending(true);
+
+    console.log("Form data:", data); // Debug log
     try {
       await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -38,8 +44,21 @@ const EditorialContact = () => {
           subject: data.subject,
           message: data.message,
         },
-        import.meta.env.VITE_EMAILJS_USER_ID
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
       );
+      // Auto reply to sender (In feture jodi besi user request ase tahole auto reply template ta vad dibo)
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_AUTO_REPLY_TEMPLATE_ID,
+        {
+          name: data.name,
+          email: data.email,
+          subject: data.subject,
+          message: data.message,
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+      );
+
       reset();
       toast.success("Message sent successfully!");
     } catch (err) {
@@ -82,7 +101,9 @@ const EditorialContact = () => {
               </p>
               <p className="mt-4 text-center font-jost text-xl font-semibold leading-snug tracking-tight text-gray-950 sm:text-2xl lg:text-left">
                 Tell me about your{" "}
-                <span className="text-emerald-800">product, timeline, and goals</span>
+                <span className="text-emerald-800">
+                  product, timeline, and goals
+                </span>
                 — I’ll follow up with next steps.
               </p>
               <div className="pointer-events-none absolute right-5 top-5 rounded-full bg-white/90 px-2.5 py-1 text-[9px] font-bold uppercase tracking-[0.18em] text-gray-700 shadow-sm backdrop-blur-sm">
@@ -100,9 +121,13 @@ const EditorialContact = () => {
             threads on WhatsApp for quick questions.
           </p>
 
-          <div className="grid gap-4 sm:grid-cols-1" data-aos="fade-up" data-aos-delay="260">
+          <div
+            className="grid gap-4 sm:grid-cols-1"
+            data-aos="fade-up"
+            data-aos-delay="260"
+          >
             <a
-              href="tel:+8801722092675"
+              href="tel:+8801619960324"
               className="editorial-card group flex gap-4 p-5 text-left transition-shadow hover:shadow-lg sm:p-6"
               data-aos="fade-up"
               data-aos-delay="280"
@@ -117,13 +142,15 @@ const EditorialContact = () => {
                     Phone
                   </span>
                 </div>
-                <p className="font-semibold text-gray-950">+880 1722092675</p>
-                <p className="mt-1 text-xs text-[var(--ed-muted)]">Tap to call</p>
+                <p className="font-semibold text-gray-950">+880 1619960324</p>
+                <p className="mt-1 text-xs text-[var(--ed-muted)]">
+                  Tap to call
+                </p>
               </div>
             </a>
 
             <a
-              href="mailto:fardus.dev@gmail.com"
+              href="mailto:nayan.krishna710@gmail.com"
               className="editorial-card group flex gap-4 p-5 text-left transition-shadow hover:shadow-lg sm:p-6"
               data-aos="fade-up"
               data-aos-delay="320"
@@ -139,9 +166,11 @@ const EditorialContact = () => {
                   </span>
                 </div>
                 <p className="break-all font-semibold text-gray-950">
-                  fardus.dev@gmail.com
+                  nayan.krishna710@gmail.com
                 </p>
-                <p className="mt-1 text-xs text-[var(--ed-muted)]">Opens your mail app</p>
+                <p className="mt-1 text-xs text-[var(--ed-muted)]">
+                  Opens your mail app
+                </p>
               </div>
             </a>
 
@@ -161,7 +190,7 @@ const EditorialContact = () => {
                   </span>
                 </div>
                 <p className="font-semibold text-gray-950">
-                  Gazipur District, Dhaka, Bangladesh
+                  Agravad, Chittagong, Bangladesh
                 </p>
                 <p className="mt-1 text-xs text-[var(--ed-muted)]">
                   Remote-friendly · Joydebpur, Gazipur
@@ -180,7 +209,9 @@ const EditorialContact = () => {
                 key={label}
                 href={href}
                 target={href.startsWith("http") ? "_blank" : undefined}
-                rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
+                rel={
+                  href.startsWith("http") ? "noopener noreferrer" : undefined
+                }
                 className="rounded-full border border-black/[0.08] bg-white/50 px-3 py-1.5 text-xs font-semibold text-gray-800 backdrop-blur-sm transition-colors hover:border-black/15 hover:bg-white/80"
               >
                 {label}
@@ -236,12 +267,14 @@ const EditorialContact = () => {
                   </label>
                   <input
                     id="ed-name"
-                    {...register("name", { required: "Required" })}
+                    {...register("name", { required: "Name is required" })}
                     className="editorial-input"
                     autoComplete="name"
                   />
                   {errors.name && (
-                    <p className="mt-1 text-xs text-red-600">{errors.name.message}</p>
+                    <p className="mt-1 text-xs text-red-600">
+                      {errors.name.message}
+                    </p>
                   )}
                 </div>
                 <div data-aos="fade-up" data-aos-delay="420">
@@ -255,14 +288,19 @@ const EditorialContact = () => {
                     id="ed-email"
                     type="email"
                     {...register("email", {
-                      required: "Required",
-                      pattern: { value: /^\S+@\S+$/i, message: "Invalid email" },
+                      required: " Email id is required",
+                      pattern: {
+                        value: /^\S+@\S+$/i,
+                        message: "Invalid email",
+                      },
                     })}
                     className="editorial-input"
                     autoComplete="email"
                   />
                   {errors.email && (
-                    <p className="mt-1 text-xs text-red-600">{errors.email.message}</p>
+                    <p className="mt-1 text-xs text-red-600">
+                      {errors.email.message}
+                    </p>
                   )}
                 </div>
               </div>
@@ -275,11 +313,13 @@ const EditorialContact = () => {
                 </label>
                 <input
                   id="ed-subject"
-                  {...register("subject", { required: "Required" })}
+                  {...register("subject", { required: "Subject is required" })}
                   className="editorial-input"
                 />
                 {errors.subject && (
-                  <p className="mt-1 text-xs text-red-600">{errors.subject.message}</p>
+                  <p className="mt-1 text-xs text-red-600">
+                    {errors.subject.message}
+                  </p>
                 )}
               </div>
               <div className="mt-4" data-aos="fade-up" data-aos-delay="510">
@@ -296,7 +336,9 @@ const EditorialContact = () => {
                   className="editorial-input resize-none"
                 />
                 {errors.message && (
-                  <p className="mt-1 text-xs text-red-600">{errors.message.message}</p>
+                  <p className="mt-1 text-xs text-red-600">
+                    {errors.message.message}
+                  </p>
                 )}
                 {error && <p className="mt-1 text-xs text-red-600">{error}</p>}
               </div>
