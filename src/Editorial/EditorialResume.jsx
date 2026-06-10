@@ -162,8 +162,8 @@ const EditorialResume = () => {
       <EditorialSection
         id="experience"
         kicker="Experience"
-        title="Where I shipped software"
-        subtitle="Production apps, ERP for institutes, and ongoing support after launch — from first demo to stable releases."
+        title="Professional experience"
+        subtitle="Building modern web applications, collaborating with development teams, and delivering production-ready solutions."
         className="!max-w-[1240px]"
       >
         <div className="grid items-start gap-12 lg:grid-cols-12 lg:gap-14">
@@ -210,8 +210,8 @@ const EditorialResume = () => {
                   </span>
                 </div>
                 <p className="text-sm font-semibold text-gray-950">
-                  {editorialExperiences.length} roles · Courses &amp; formal
-                  training below
+                  {editorialExperiences.length} professional role · Academic
+                  Foundation below
                 </p>
                 <p className="mt-1 text-xs leading-relaxed text-[var(--ed-muted)]">
                   Scroll for narrative detail, or grab the PDF for recruiters
@@ -231,9 +231,9 @@ const EditorialResume = () => {
 
       <EditorialSection
         id="courses"
-        kicker="Courses"
-        title="Structured learning"
-        subtitle="Programs that accelerated the move from engineering into professional web development."
+        kicker="Learning"
+        title="Continuous growth"
+        subtitle="Focused learning through hands-on projects, modern web technologies, and real-world development practices."
         className="!max-w-[1240px] !pt-12 lg:!pt-16"
         delay={0.04}
       >
@@ -247,8 +247,8 @@ const EditorialResume = () => {
       <EditorialSection
         id="education"
         kicker="Education"
-        title="Formal training"
-        subtitle="Technical foundation before focusing fully on software."
+        title="Academic foundation"
+        subtitle="Computer Science education that shaped my understanding of software development and problem-solving."
         className="!max-w-[1240px] !pt-12 lg:!pt-16"
         delay={0.06}
       >
