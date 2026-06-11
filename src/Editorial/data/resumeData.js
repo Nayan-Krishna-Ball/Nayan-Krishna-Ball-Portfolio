@@ -42,7 +42,7 @@ export const editorialCourses = [
 
     certificateLabel: "Certificate",
 
-    certificateUrl: "https://learnwithsumit.com",
+    certificateUrl: "https://drive.google.com/drive/folders/1r5dSXa3aJlwWnJSdOqDvOTR3kYq8YvJf?usp=sharing",
 
     summary:
       "Advanced React and Next.js focused full-stack development course covering modern frontend architecture, backend integration, and production-level project building. Strong emphasis on React 19, Next.js 15, and real-world scalable application development.",
