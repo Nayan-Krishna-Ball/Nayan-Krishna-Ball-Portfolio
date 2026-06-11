@@ -156,7 +156,7 @@ const EditorialFooter = () => {
               data-aos="fade"
             >
               <a
-                href="mailto:fardus.dev@gmail.com"
+                href="mailto:nayan.krishna710@gmail.com"
                 className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-gray-950 py-3 text-xs font-semibold text-white shadow-lg shadow-black/10 transition-all hover:bg-gray-900 lg:w-auto sm:px-5"
                 data-aos="fade"
               >
