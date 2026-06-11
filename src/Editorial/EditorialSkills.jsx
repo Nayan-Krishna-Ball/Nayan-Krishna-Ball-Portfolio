@@ -18,10 +18,12 @@ import {
   SiCanva,
   SiExpress,
   SiFirebase,
+  SiJsonwebtokens,
   SiMongodb,
   SiNetlify,
   SiNextdotjs,
   SiOpenai,
+  SiPostman,
   SiRedux,
   SiTailwindcss,
   SiTypescript,
@@ -67,6 +69,7 @@ const skillCategories = [
       { icon: <FaNodeJs className="text-gray-800" />, name: "Node.js" },
       { icon: <SiExpress className="text-gray-800" />, name: "Express.js" },
       { icon: <SiMongodb className="text-gray-800" />, name: "MongoDB" },
+      { icon: <SiJsonwebtokens className="text-gray-800" />, name: "JWT" },
       { icon: <SiFirebase className="text-gray-800" />, name: "Firebase" },
     ],
   },
@@ -80,6 +83,7 @@ const skillCategories = [
       },
       { icon: <FaGitAlt className="text-gray-800" />, name: "Git" },
       { icon: <FaGithub className="text-gray-800" />, name: "GitHub" },
+      { icon: <SiPostman className="text-gray-800" />, name: "Postman" },
       { icon: <FaFigma className="text-gray-800" />, name: "Figma" },
       { icon: <SiNetlify className="text-gray-800" />, name: "Netlify" },
       { icon: <SiVercel className="text-gray-800" />, name: "Vercel" },
@@ -130,7 +134,7 @@ const EditorialSkills = () => {
     <EditorialSection
       id="skills"
       kicker="Skills"
-      title="Stack I build and ship with"
+      title="Technologies I work with"
       subtitle="From interface polish to APIs and deployment — the tools behind real products in production, not demo tutorials."
       className="!max-w-[1240px]"
     >
@@ -147,19 +151,22 @@ const EditorialSkills = () => {
               <div className="flex items-center justify-center gap-2 lg:justify-start">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
                 <span className="text-[10px] font-bold uppercase tracking-[0.22em] text-emerald-800">
-                  Flagship section
+                  Core Expertise
                 </span>
               </div>
               <p className="mt-4 text-center font-jost text-xl font-semibold leading-snug tracking-tight text-gray-950 sm:text-2xl lg:text-left">
-                I lead with{" "}
-                <span className="text-emerald-800">React ecosystems</span>, ship
-                full features on the MERN stack, and care about{" "}
-                <span className="text-violet-800">design-to-code</span> quality.
+                Building modern web applications with{" "}
+                <span className="text-emerald-800">React & Next.js</span>,
+                integrating backend services, and delivering{" "}
+                <span className="text-violet-800">
+                  responsive user experiences
+                </span>
+                .
               </p>
               <p className="mt-3 text-center text-sm leading-relaxed text-[var(--ed-muted)] lg:text-left">
-                ERP, marketing sites, and internal tools — same discipline:
-                accessible UI, predictable state, and deploy pipelines you can
-                trust.
+                From e-commerce platforms to real-time applications, I focus on
+                clean code, performance optimization, API integration, and
+                maintainable architecture.
               </p>
             </div>
             <div className="flex flex-wrap justify-center gap-2 lg:flex-col lg:items-stretch lg:justify-center">

@@ -109,7 +109,8 @@ const EditorialAbout = () => {
             <span className="text-emerald-800">
               fast, accessible interfaces
             </span>{" "}
-            — and reliable backends to power them.
+            — and reliable <span className="text-violet-800">backends</span> to
+            power them.
           </p>
 
           <div
@@ -129,9 +130,9 @@ const EditorialAbout = () => {
                 </h3>
               </div>
               <p className="text-sm leading-relaxed text-gray-800">
-                HTML5, CSS3, Tailwind, Bootstrap, JavaScript, TypeScript, React,
-                Next.js, Redux, REST APIs, Firebase Auth — and React Native in
-                progress for mobile.
+                HTML5, CSS3, Tailwind, JavaScript, TypeScript, React, Next.js,
+                Redux, REST APIs, Firebase Auth — and React Native in progress
+                for mobile.
               </p>
             </div>
             <div

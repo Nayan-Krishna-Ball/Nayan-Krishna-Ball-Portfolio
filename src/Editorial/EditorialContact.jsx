@@ -33,7 +33,6 @@ const EditorialContact = () => {
     setError("");
     setSending(true);
 
-    console.log("Form data:", data); // Debug log
     try {
       await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -150,6 +149,10 @@ const EditorialContact = () => {
             </a>
 
             <a
+              //  href="https://mail.google.com/mail/?view=cm&fs=1&to=nayan.krishna710@gmail.com"
+              //   target="_blank"
+              //   rel="noopener noreferrer"
+
               href="mailto:nayan.krishna710@gmail.com"
               className="editorial-card group flex gap-4 p-5 text-left transition-shadow hover:shadow-lg sm:p-6"
               data-aos="fade-up"

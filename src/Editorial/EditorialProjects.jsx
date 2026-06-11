@@ -9,14 +9,16 @@ const EditorialProjects = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   /** Only assign real iframe src after a project tab has been opened (avoids loading every URL on first paint). */
   const [loadedIframeIndices, setLoadedIframeIndices] = useState(
-    () => new Set([0])
+    () => new Set([0]),
   );
   const [reloadKeys, setReloadKeys] = useState(() =>
-    editorialProjects.map(() => 0)
+    editorialProjects.map(() => 0),
   );
 
   const active = editorialProjects[activeIndex];
-  const displayHost = active.liveUrl.replace(/^https?:\/\//, "").replace(/\/$/, "");
+  const displayHost = active.liveUrl
+    .replace(/^https?:\/\//, "")
+    .replace(/\/$/, "");
 
   const reloadActivePreview = () => {
     setReloadKeys((prev) => {
@@ -56,8 +58,8 @@ const EditorialProjects = () => {
                 </span>
               </div>
               <p className="mt-3 text-center font-jost text-base font-semibold leading-snug text-gray-950 text-balance sm:text-lg md:text-xl lg:text-left">
-                Same URLs as production — scroll, navigate, and try flows without
-                leaving the portfolio.
+                Same URLs as production — scroll, navigate, and try flows
+                without leaving the portfolio.
               </p>
             </div>
             <div className="flex flex-wrap justify-center gap-2 lg:justify-end">
@@ -190,7 +192,10 @@ const EditorialProjects = () => {
                 data-aos-delay="260"
               >
                 <div className="flex min-w-0 flex-1 items-start gap-2">
-                  <div className="mt-1.5 hidden shrink-0 items-center gap-1.5 sm:flex" aria-hidden>
+                  <div
+                    className="mt-1.5 hidden shrink-0 items-center gap-1.5 sm:flex"
+                    aria-hidden
+                  >
                     <span className="h-2 w-2 rounded-full bg-[#ff5f57] sm:h-2.5 sm:w-2.5" />
                     <span className="h-2 w-2 rounded-full bg-[#febc2e] sm:h-2.5 sm:w-2.5" />
                     <span className="h-2 w-2 rounded-full bg-[#28c840] sm:h-2.5 sm:w-2.5" />
@@ -229,7 +234,7 @@ const EditorialProjects = () => {
                 {displayHost}
               </div>
             </div>
-  {/* 
+            {/* 
               {active.lines?.length ? (
                 <div
                   className="border-b border-amber-200/70 bg-amber-50/95 px-3 py-2.5 text-xs text-amber-950 sm:px-4"
