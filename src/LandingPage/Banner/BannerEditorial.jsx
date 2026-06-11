@@ -8,7 +8,7 @@ import myimg from "../../assets/me.png";
 
 const socials = [
   {
-    href: "https://github.com/Nayan-Krishna-Ball", 
+    href: "https://github.com/Nayan-Krishna-Ball",
     label: "GitHub",
     Icon: LuGithub,
   },
@@ -114,8 +114,8 @@ const BannerEditorial = () => {
             <p className="mx-auto max-w-xl font-jost text-lg font-semibold leading-snug tracking-tight text-gray-950 sm:text-xl lg:mx-0 lg:max-w-lg">
               I build{" "}
               <span className="text-emerald-800">modern web applications</span>{" "}
-              with React and Next.js — focused on performance, usability, and
-              clean user experiences.
+              with <span className="text-violet-800">React and Next.js</span> —
+              focused on performance, usability, and clean user experiences.
             </p>
 
             <p className="mx-auto max-w-xl text-[15px] leading-relaxed text-[#5c5a56] sm:text-base lg:mx-0">
