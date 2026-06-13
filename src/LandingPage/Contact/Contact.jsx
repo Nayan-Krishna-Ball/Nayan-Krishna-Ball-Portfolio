@@ -71,21 +71,21 @@ const Contact = () => {
               <img src={phone} alt="Phone" className="w-10" />
               <h2 className="text-black font-semibold mt-4 text-left">
                 Phone : <br />
-                +880 1722092675
+                +880 1619960324
               </h2>
             </div>
             <div className="rounded-lg p-5 flex lg:justify-start justify-center items-end gap-6">
               <img src={email} alt="Email" className="w-10" />
               <h2 className="text-black font-semibold mt-4 text-left">
                 Email : <br />
-                fardus.dev@gmail.com
+                nayan.krishna710@gmail.com
               </h2>
             </div>
             <div className="rounded-lg p-5 flex lg:justify-start justify-center items-end gap-6">
               <img src={map} alt="Location" className="w-10 pb-5" />
               <h2 className="text-black font-semibold mt-4 text-left">
                 Location : <br />
-                Gazipur District, Dhaka, <br /> Bangladesh
+                Chittagong District <br /> Bangladesh
               </h2>
             </div>
           </div>
