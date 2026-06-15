@@ -10,8 +10,8 @@ export const editorialProjects = [
     name: "Real time Chat Application",
     title:
       " A Real time Chat Application using Socket.io, Redux, React JS, Node JS and Express JS",
-    lines: [],
-    // lines: ["User Name: admin_demo", "Password: admin123"],
+    // lines: [],
+    lines: ["User Name: n@gmail.com", "Password: 1234"],
     liveUrl: "https://chat-application-client-woad.vercel.app/",
     iframeSrc: "https://chat-application-client-woad.vercel.app/",
   },
