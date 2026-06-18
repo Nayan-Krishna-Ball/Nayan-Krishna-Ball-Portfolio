@@ -4,7 +4,7 @@
 
 A modern editorial-style portfolio built with **React**, **Vite**, and **Tailwind CSS**, showcasing my professional experience, technical skills, featured projects, education, and contact information.
 
-🌐 **Live Demo:** https://your-portfolio-url.vercel.app
+🌐 **Live Demo:** https://nayan-krishna-ball-portfolio.vercel.app/
 
 ## 🛠️ Technologies
 
