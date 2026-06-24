@@ -10,18 +10,17 @@ export const editorialProjects = [
     name: "Real time Chat Application",
     title:
       " A Real time Chat Application using Socket.io, Redux, React JS, Node JS and Express JS",
-    // lines: [],
     lines: ["User Name: n@gmail.com", "Password: 1234"],
     liveUrl: "https://chat-application-client-woad.vercel.app/",
     iframeSrc: "https://chat-application-client-woad.vercel.app/",
   },
   {
-    name: "React Cart system (Teachhub)",
+    name: "AI Studio",
     title:
-      " A React Cart system for an E-commerce website using React JS,Node JS, Express JS and Tailwind CSS",
-    lines: [],
-    liveUrl: "https://tech-hub-e-commerce-psi.vercel.app/",
-    iframeSrc: "https://tech-hub-e-commerce-psi.vercel.app/",
+      "A full-stack AI SaaS platform featuring AI Chat, Voice AI, Text-to-Image generation, and Image-to-SEO extraction.",
+    lines: ["User Name: admin@gmail.com", "Password: 123456"],
+    liveUrl: "https://ai-studio-ebon-omega.vercel.app/",
+    iframeSrc: "https://ai-studio-ebon-omega.vercel.app/",
   },
   {
     name: "Fourbitz",
@@ -31,6 +30,15 @@ export const editorialProjects = [
     liveUrl: "https://old-fourbitz.vercel.app/",
     iframeSrc: "https://old-fourbitz.vercel.app/",
   },
+  {
+    name: "React Cart system (Teachhub)",
+    title:
+      " A React Cart system for an E-commerce website using React JS,Node JS, Express JS and Tailwind CSS",
+    lines: [],
+    liveUrl: "https://tech-hub-e-commerce-psi.vercel.app/",
+    iframeSrc: "https://tech-hub-e-commerce-psi.vercel.app/",
+  },
+
   {
     name: "Kanban Task Manager",
     title: "A Kanban Task Manager Application using React JS and Tailwind CSS",
