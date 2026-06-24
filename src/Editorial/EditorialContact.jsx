@@ -196,7 +196,7 @@ const EditorialContact = () => {
                   Agravad, Chittagong, Bangladesh
                 </p>
                 <p className="mt-1 text-xs text-[var(--ed-muted)]">
-                  Remote-friendly · Joydebpur, Gazipur
+                  Remote-friendly ·  Chittagong, Bangladesh
                 </p>
               </div>
             </div>

@@ -2,7 +2,7 @@ export const editorialProjects = [
   {
     name: "Gadgets BD",
     title: " E-commerce Website for Gadgets",
-    lines: [],
+    lines: ["User Name: nn@gmail.com", "Password: 123456"],
     liveUrl: "https://e-commerce-gadgets-bd.vercel.app/",
     iframeSrc: "https://e-commerce-gadgets-bd.vercel.app/",
   },
