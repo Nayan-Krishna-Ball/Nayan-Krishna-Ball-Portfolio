@@ -3,7 +3,9 @@ import { FaFacebookF, FaWhatsapp } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { LuGithub } from "react-icons/lu";
 import { MdFileDownload } from "react-icons/md";
-import PDF from "../../assets/Forntend_Developer_Nayan_krishna_bal.pdf";
+// import PDF from "../../assets/Forntend_Developer_Nayan_krishna_bal.pdf";
+import PDF from "../../assets/Nayan_Krishna_Bal_Web_Developer.pdf";
+
 import myimg from "../../assets/me.png";
 
 const socials = [

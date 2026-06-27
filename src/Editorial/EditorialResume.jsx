@@ -2,7 +2,9 @@
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { HiOutlineDocumentText } from "react-icons/hi";
 import { MdFileDownload } from "react-icons/md";
-import PDF from "../assets/Forntend_Developer_Nayan_krishna_bal.pdf";
+// import PDF from "../assets/Forntend_Developer_Nayan_krishna_bal.pdf";
+import PDF from "../assets/Nayan_Krishna_Bal_Web_Developer.pdf";
+
 import EditorialSection from "./EditorialSection";
 import {
   editorialCourses,
